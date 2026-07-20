@@ -1,11 +1,12 @@
-.sidebar{
+.sidebar {
     position: fixed;
     width: 68px;
     top: 55px;
     left: 0px;
     bottom: 0px;
 }
-.sidebar-link{
+
+.sidebar-link {
     margin-top: 3px;
     display: flex;
     flex-direction: column;
@@ -18,28 +19,32 @@
     cursor: pointer;
     position: relative;
 }
-.sidebar-link:hover{
-    background-color: rgb(235,235,235);
+
+.sidebar-link:hover {
+    background-color: rgb(235, 235, 235);
     border-radius: 10px;
 }
-.sidebar-link p{
+
+.sidebar-link p {
     font-size: 10px;
 }
-.sidebar-link img{
+
+.sidebar-link img {
     width: 33px;
     height: 33px;
 }
-.sidebar-link .tooltip{
+
+.sidebar-link .tooltip {
     position: absolute;
     background-color: black;
-    color: rgb(190,190,190);
+    color: rgb(190, 190, 190);
     padding-bottom: 6px;
     padding-top: 6px;
     padding-left: 7px;
     padding-right: 7px;
     font-size: 12px;
-    border:solid;
-    border-width:1px;
+    border: solid;
+    border-width: 1px;
     bottom: -27px;
     right: -18px;
     opacity: 0;
@@ -47,10 +52,12 @@
     pointer-events: none;
     white-space: wrap;
 }
-.sidebar-link:hover .tooltip{
+
+.sidebar-link:hover .tooltip {
     opacity: 1;
 }
-.youtube-home .tooltip{
+
+.youtube-home .tooltip {
     bottom: -20px;
     left: 80px;
     right: inherit;
