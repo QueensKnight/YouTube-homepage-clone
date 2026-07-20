@@ -1,207 +1,230 @@
+.header {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 100;
+}
 
-.header{
-    height: 55px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: white;
-    z-index: 100;
+.left {
+  display: flex;
+  align-items: center;
 }
-.left{ 
-    display: flex;
-    align-items: center;
+
+.handburger-menu {
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 1px;
 }
-.handburger-menu{
-    height: 24px;
-    margin-left: 24px;
-    margin-right: 24px;
-    margin-top: 1px;
+
+.youtube-logo {
+  height: 20px;
+  margin-bottom: 2px;
+  position: relative;
 }
-.youtube-logo{
-    height: 20px;
-    margin-bottom: 2px;
-    position: relative;
+
+.youtube-home .tooltip {
+  position: absolute;
+  background-color: black;
+  color: rgb(190, 190, 190);
+  padding-bottom: 6px;
+  padding-top: 6px;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-size: 12px;
+  border: solid;
+  border-width: 1px;
+  bottom: -27px;
+  right: -18px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: wrap;
 }
-.youtube-home .tooltip{
-    position: absolute;
-    background-color: black;
-    color: rgb(190,190,190);
-    padding-bottom: 6px;
-    padding-top: 6px;
-    padding-left: 7px;
-    padding-right: 7px;
-    font-size: 12px;
-    border:solid;
-    border-width:1px;
-    bottom: -27px;
-    right: -18px;
-    opacity: 0;
-    transition: opacity 0.15s;
-    pointer-events: none;
-    white-space: wrap;
+
+.youtube-home:hover .tooltip {
+  opacity: 1;
 }
-.youtube-home:hover .tooltip{
-    opacity: 1;
+
+.centre {
+  /* background-color: lightpink; */
+  flex: 1;
+  margin-left: 88px;
+  margin-right: 10px;
+  max-width: 650px;
+  display: flex;
+  align-items: center;
+  margin-top: 1px;
 }
-.centre{
-    /* background-color: lightpink; */
-    flex: 1;
-    margin-left: 88px;
-    margin-right: 10px;
-    max-width: 650px;
-    display: flex;
-    align-items: center;
-    margin-top: 1px;
+
+.Search {
+  font-size: 20px;
+  height: 37px;
+  flex: 1;
+  font-size: 16px;
+  padding-left: 16px;
+  padding-top: 2px;
+  border: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.4);
+  width: 0;
+  cursor: text;
+  z-index: 1;
 }
-.Search{
-    font-size: 20px;
-    height: 37px;
-    flex: 1;
-    font-size: 16px;
-    padding-left: 16px;
-    padding-top: 2px;
-    border: none;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    box-shadow: inset 0px 0px 2px rgba(0,0,0,0.4);
-    width: 0;
-    cursor:text;
-    z-index: 1;
+
+.Search::placeholder {
+  font-family: Roboto, Arial;
+  font-size: 16px;
 }
-.Search::placeholder{
-    font-family: Roboto, Arial;
-    font-size: 16px;
+
+.search-button {
+  border: none;
+  width: 60px;
+  height: 40px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-right: 15px;
+  box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.3);
+  background-color: rgb(250, 250, 250);
+  margin-left: -1px;
+  position: relative;
+  cursor: pointer;
 }
-.search-button{
-    border: none;
-    width: 60px;
-    height: 40px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    margin-right: 15px;
-    box-shadow: inset 0px 0px 2px rgba(0,0,0,0.3);
-    background-color: rgb(250, 250, 250);
-    margin-left: -1px;  
-    position: relative;
-    cursor: pointer;
+
+.search-outline {
+  width: 60%;
+  height: 60%;
+  margin-top: 5px;
+  border-radius: 15px;
 }
-.search-outline{
-    width: 60%;
-    height: 60%;
-    margin-top: 5px;
-    border-radius: 15px;
+
+.search-button .tooltip {
+  position: absolute;
+  background-color: black;
+  color: rgb(190, 190, 190);
+  padding-bottom: 6px;
+  padding-top: 6px;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-size: 12px;
+  border: solid;
+  border-width: 1px;
+  bottom: -27px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
 }
-.search-button .tooltip{
-    position: absolute;
-    background-color: black;
-    color: rgb(190,190,190);
-    padding-bottom: 6px;
-    padding-top: 6px;
-    padding-left: 7px;
-    padding-right: 7px;
-    font-size: 12px;
-    border:solid;
-    border-width:1px;
-    bottom: -27px;
-    opacity: 0;
-    transition: opacity 0.15s;
-    pointer-events: none;
+
+.search-button:hover .tooltip {
+  opacity: 1;
 }
-.search-button:hover .tooltip{
-    opacity: 1;
+
+.voice-search {
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.05);
+  background-color: rgb(240, 240, 240);
+  object-fit: cover;
+  cursor: pointer;
+  position: relative;
 }
-.voice-search{
-    border: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    box-shadow: inset 0px 0px 3px rgba(0,0,0,0.05);
-    background-color: rgb(240, 240, 240);
-    object-fit:cover;
-    cursor: pointer;
-    position: relative;
+
+.voice-fill {
+  height: 100%;
+  width: 100%;
 }
-.voice-fill{
-    height: 100%;
-    width: 100%;
-}
+
 .voice-search .tooltip2,
-.notification-button .tooltip2{
-    position: absolute;
-    background-color: rgb(23, 23, 23);
-    color: rgb(239, 238, 238);
-    font-size: 12px;
-    padding-left:6px;
-    padding-right:6px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 4px;
-    opacity: 0;
-    pointer-events: none;
-    transition: 0.15s;
-    bottom: -38px;
-    white-space: nowrap;
-    right: -47px;
+.notification-button .tooltip2 {
+  position: absolute;
+  background-color: rgb(23, 23, 23);
+  color: rgb(239, 238, 238);
+  font-size: 12px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.15s;
+  bottom: -38px;
+  white-space: nowrap;
+  right: -47px;
 }
+
 .voice-search:hover .tooltip2,
-.notification-button:hover .tooltip2{
-    opacity: 0.55;
+.notification-button:hover .tooltip2 {
+  opacity: 0.55;
 }
-.notification-button .tooltip2{
-    right: -18px;
+
+.notification-button .tooltip2 {
+  right: -18px;
 }
-.right{
-    width: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 25px;
-    flex-shrink: 0;
+
+.right {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 25px;
+  flex-shrink: 0;
 }
-.create-icon{
-    height: 40px;
-    width: 95px;
-    border-radius: 20px;
-    cursor: pointer;
+
+.create-icon {
+  height: 40px;
+  width: 95px;
+  border-radius: 20px;
+  cursor: pointer;
 }
-.create-button:hover{
-    color: rgb(77, 74, 74);
+
+.create-button:hover {
+  color: rgb(77, 74, 74);
 }
-.notification-button{
-    border-radius: 20px;
-    border: none;
-    height: 40px;
-    width: 40px;
-    box-shadow: inset 0px 0px 3px rgba(0,0,0,0.05);
-    background-color: white;
-    position: relative;
-    position: relative;
-    cursor: pointer;
+
+.notification-button {
+  border-radius: 20px;
+  border: none;
+  height: 40px;
+  width: 40px;
+  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  position: relative;
+  position: relative;
+  cursor: pointer;
 }
-.notification-count{
-    position: absolute;
-    top: 3px;
-    right: 5px;
-    background-color: red;
-    color: white;
-    border-radius: 10px;
-    padding-bottom: 2px;
-    padding-top: 2px;
-    padding-right: 2px;
-    padding-left: 3px;
-    font-size: 10px;
+
+.notification-count {
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  padding-right: 2px;
+  padding-left: 3px;
+  font-size: 10px;
 }
-.notification-icon{
-    height: 75%;
-    width: 75%;
+
+.notification-icon {
+  height: 75%;
+  width: 75%;
 }
-.profile-picture{
-    width: 32px;
-    height: 32px;
-    border-radius: 20px;
-    cursor: pointer;
+
+.profile-picture {
+  width: 32px;
+  height: 32px;
+  border-radius: 20px;
+  cursor: pointer;
 }
